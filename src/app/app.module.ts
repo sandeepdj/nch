@@ -14,6 +14,7 @@ import { FixedComponent } from './pages/fixed/fixed.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 
 import { routing } from './app.routing';
+import { HomeComponent } from './pages/home/home.component';
 
 @NgModule({
   declarations: [
@@ -25,11 +26,12 @@ import { routing } from './app.routing';
     AppointmentComponent,
     DoctorappointComponent,
     FixedComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
-    routing
+         routing
   ],
   providers: [],
   bootstrap: [AppComponent]

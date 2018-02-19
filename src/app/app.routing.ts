@@ -9,16 +9,24 @@ import { AppointmentComponent } from './pages/appointment/appointment.component'
 import { DoctorappointComponent } from './pages/doctorappoint/doctorappoint.component';
 import { FixedComponent } from './pages/fixed/fixed.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
+import { HomeComponent } from './pages/home/home.component';
 
 const appRoutes : Routes =
   [
     {
       path: '',
-      component: LayoutComponent
+      redirectTo: 'NCH',
+      pathMatch: 'full'
     },
     {
-      path: 'Home',
-      component: LayoutComponent
+      path: 'NCH',
+      component: LayoutComponent,
+      children: [
+        { path: '', redirectTo: 'Home', pathMatch: 'full' },
+
+        {path: 'Home', component: HomeComponent},
+        {path: 'About', component: HomeComponent},
+      ]
     },
     {
       path: '**',
