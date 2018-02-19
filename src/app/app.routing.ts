@@ -1,9 +1,6 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {ModuleWithProviders} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
 
-
-import { AppComponent } from './app.component';
 import { HeaderComponent } from './pages/header/header.component';
 import { MenuComponent } from './pages/menu/menu.component';
 import { LayoutComponent } from './pages/layout/layout.component';
@@ -13,25 +10,20 @@ import { DoctorappointComponent } from './pages/doctorappoint/doctorappoint.comp
 import { FixedComponent } from './pages/fixed/fixed.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 
-import { routing } from './app.routing';
+const appRoutes : Routes =
+  [
+    {
+      path: '',
+      component: LayoutComponent
+    },
+    {
+      path: 'Home',
+      component: LayoutComponent
+    },
+    {
+      path: '**',
+      component: PageNotFoundComponent
+    }
+  ];
 
-@NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    MenuComponent,
-    LayoutComponent,
-    FooterComponent,
-    AppointmentComponent,
-    DoctorappointComponent,
-    FixedComponent,
-    PageNotFoundComponent
-  ],
-  imports: [
-    BrowserModule,
-    routing
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
-})
-export class AppModule { }
+export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);

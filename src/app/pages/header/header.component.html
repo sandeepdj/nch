@@ -1,3 +1,164 @@
-<p>
-  header works!
-</p>
+<header class="header">
+  <div class="container-fluid">
+    <div class="row bgcolor">
+      <div class="container top-header">
+        <div class="row">
+          <div class="col-md-6 left-anchor">
+            <a class="book-anchor">BOOK APPOINTMENT </a>
+            <a> DIRECTION TO NCH</a>
+          </div>
+          <div class="col-md-6">
+            <p class="right-anchor">
+              <a>CAREER | </a>
+              <a>INFO@NAVACHETHANAHOSPITAL.COM</a>
+              <a class="fa fa-facebook top-icon"></a>
+              <a class="fa fa-twitter top-icon"></a>
+              <a class="fa fa-google-plus top-icon"></a>
+              <a class="fa fa-linkedin top-icon"></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row ">
+      <div class="container">
+        <div class="row logobar">
+            <div class="col-md-4">
+                <img src="./assets/logo.png" class="logo">
+            </div>
+            <div class="col-md-8 ">
+                <ul class="lefticons pull-right">
+                    <li class="wow flipInX" style="visibility: visible; animation-name: flipInX;">
+                        <div class="iconplace">
+                            <img ng-src="api/img/smartphone-call.svg" src="./assets/smartphone-call.svg">
+                        </div>
+                        <div class="icontext">
+                            <h4> AMBULANCE </h4>
+                            <span> 080-42480000</span>
+                        </div>
+                    </li>
+                    <li class="wow flipInX" style="visibility: visible; animation-name: flipInX;">
+                        <div class="iconplace">
+                            <img ng-src="api/img/phone-contact.svg" src="./assets/phone-contact.svg">
+                        </div>
+                        <div class="icontext">
+                            <h4> Hospital </h4>
+                            <span> 080-42480000</span>
+                        </div>
+                    </li>
+                    <li class="wow flipInX" style="padding-left: 0px; padding-top: 4px; visibility: visible; animation-name: flipInX;">
+                        <div class="dropdown">
+                            <div class="circlemea dropbtn" style="cursor:pointer">  Health Packages <i class="fa fa-angle-down pull-right" style="margin-top: 3px;"></i></div>
+                            <div class="dropdown-content">
+                                 <a href="">DENTAL</a>
+                                <a href=""> SURGERY</a>
+                                <a href="#!/app/packages">HEALTH CHECK UP</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="row ui-gradient-blue headerBox animates">
+        <div class="container">
+       <div class="col-lg-12 col-md-12 col-sm-12">
+           <nav class="navbar navbar-custom">
+               <div class="container-fluid">
+                   <div class="navbar-header">
+                       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                           <span class="icon-bar"></span>
+                           <span class="icon-bar"></span>
+                           <span class="icon-bar"></span>
+                      </button>
+                       <a class="navbar-brand none" href="#"> Menubar</a>
+                   </div>
+                   <div class="collapse navbar-collapse" id="myNavbar">
+                       <ul class="nav navbar-nav topsnavb">
+                           <li class="active">
+                               <a ui-sref="app.Home" href="#!/app/Home"><i class="fa fa-home"></i> Home</a>
+                           </li>
+                           <li>
+                               <a ui-sref="app.About" href="#!/app/About"> About NCH</a>
+                           </li>
+                           <li class="dropdown mega-dropdown">
+                               <a class="dropdown-toggle" data-toggle="dropdown" href=""> Specialities
+                                   <span class="caret"></span></a>
+                               <ul class="dropdown-menu mega-dropdown-menu row">
+                                   <h4 class=" dropdown-header">SPECIALITIES</h4>
+                                   <li class="col-sm-4">
+                                       <ul>
+                                           <!-- ngRepeat: spe in speacils.slice(0, 10) --><li ng-repeat="spe in speacils.slice(0, 10)" class="ng-scope" style="">
+                                               <a href="#!app/Specialities/3" class="ng-binding">ANAESTHESIOLOGY</a>
+                                           </li><!-- end ngRepeat: spe in speacils.slice(0, 10) --><li ng-repeat="spe in speacils.slice(0, 10)" class="ng-scope">
+                                               <a href="#!app/Specialities/15" class="ng-binding">GENERAL MEDICINE</a>
+                                           </li><!-- end ngRepeat: spe in speacils.slice(0, 10) -->
+                                       </ul>
+                                   </li>
+                                   <li class="col-sm-4">
+                                       <ul>
+                                           <!-- ngRepeat: spe in speacils.slice(11) -->
+
+
+                                       </ul>
+                                   </li>
+                                   <li class="col-sm-4">
+                                       <div class="megaimage">
+                                           <img ng-src="api/img/mega-menu-img.jpg" style="
+                                               position: relative;
+                                               float: left;
+                                               width: 100%;
+                                           " src="./assets/mega-menu-img.jpg">
+                                       </div>
+                                   </li>
+                               </ul>
+                           </li>
+                           <li class="dropdown mega-dropdown">
+                               <a class="dropdown-toggle" data-toggle="dropdown" href=""> Super Specialities
+                                   <span class="caret"></span></a>
+                               <ul class="dropdown-menu mega-dropdown-menu row" id="menu2Mega">
+                                   <h4 class=" dropdown-header"><b>SUPER SPECIALITIES</b></h4>
+                                   <li class="col-sm-4">
+                                       <ul>
+
+                                           <!-- ngRepeat: supspe in supspecials.slice(0, 10) --><li ng-repeat="supspe in supspecials.slice(0, 10)" class="ng-scope" style=""> <a href="#!app/Super/5" class="ng-binding">CARDIOLOGY</a> </li><!-- end ngRepeat: supspe in supspecials.slice(0, 10) --><li ng-repeat="supspe in supspecials.slice(0, 10)" class="ng-scope"> <a href="#!app/Super/14" class="ng-binding">GASTROENTEROLOGY</a> </li><!-- end ngRepeat: supspe in supspecials.slice(0, 10) --><li ng-repeat="supspe in supspecials.slice(0, 10)" class="ng-scope"> <a href="#!app/Super/46" class="ng-binding">PSYCHIATRY</a> </li><!-- end ngRepeat: supspe in supspecials.slice(0, 10) --><li ng-repeat="supspe in supspecials.slice(0, 10)" class="ng-scope"> <a href="#!app/Super/83" class="ng-binding">RHEUMATOLOGY</a> </li><!-- end ngRepeat: supspe in supspecials.slice(0, 10) -->
+
+                                       </ul>
+                                   </li>
+                                   <li class="col-sm-4">
+                                       <ul>
+                                           <!-- ngRepeat: supspe in supspecials.slice(11) -->
+                                       </ul>
+                                   </li>
+                                   <li class="col-sm-4">
+                                       <div class="megaimage">
+                                           <img ng-src="api/img/mega-menu-img.jpg" style="
+                                               position: relative;
+                                               float: left;
+                                               width: 100%;
+                                           " src="./assets/mega-menu-img.jpg">
+                                       </div>
+                                   </li>
+                               </ul>
+                           </li>
+<!--
+                           <li><a ui-sref="app.Facilities"> Facilities </a></li>
+                           <li><a ui-sref="app.NewsEvents">News and Events</a></li>
+-->
+                           <li><a ui-sref="app.Contact" href="#!/app/Contact">Reach Us</a></li>
+
+                       </ul>
+                   </div>
+               </div>
+           </nav>
+       </div>
+
+
+   </div>
+   </div>
+  </div>
+</header>
